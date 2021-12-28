@@ -1,0 +1,144 @@
+.formacao {
+  background: #292929;
+  color: #fff;
+}
+
+.formacao .container {
+  padding: 6rem 1.25rem;
+  position: relative;
+}
+
+.formacao .container::after {
+  content: '';
+  display: block;
+  background: url(../assets/footer-element-circle.svg) no-repeat center;
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  bottom: -70px;
+  left: 20px;
+}
+
+.formacao .subtitulo {
+  color: #525252;
+  max-width: 5ch;
+}
+
+.formacao-texto {
+  font-size: 1.5rem;
+  color: #cccccc;
+  line-height: 1.5;
+  max-width: 40ch;
+  margin-bottom: 5.5rem;
+}
+
+.formacao-texto .link-light {
+  color: #cc8aff;
+}
+
+.formacao-texto strong {
+  color: #ffffff;
+}
+
+.faculdade-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 4.5rem;
+}
+
+.faculdade {
+  background: #202020;
+  flex: 1;
+  padding: 1.5rem 1.5rem 2rem 1.5rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.faculdade-tipo,
+.faculdade-instituicao {
+  color: #a3a3a3;
+}
+
+.faculdade-tipo {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.faculdade-curso {
+  flex: 1;
+  margin-bottom: 3rem;
+}
+
+.faculdade-instituicao {
+  font-size: 1.125rem;
+}
+
+.formacao-extra h3 {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #8f8f8f;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.cursos h3::before,
+.idiomas h3::before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 20px;
+  position: absolute;
+  left: -32px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.cursos h3::before {
+  background: url("../assets/icon-cursos.svg");
+}
+
+.idiomas h3::before {
+  background: url("../assets/icon-idiomas.svg");
+}
+
+.formacao-extra li {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.formacao-extra li span {
+  color: #8f8f8f;
+}
+
+.cursos li {
+  display: flex;
+  justify-content: space-between;
+  max-width: 420px;
+}
+
+.separador {
+  display: block;
+  content: "";
+  height: 1px;
+  max-width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(90deg, #141414 0%, rgba(20, 20, 20, 0) 100%);
+}
+
+@media (max-width: 800px) {
+  .formacao .container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .formacao-extra {
+    margin-left: 2rem;
+  }
+
+}
